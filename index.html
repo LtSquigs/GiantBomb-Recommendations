@@ -1,0 +1,71 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="scripts/logic.js"></script>
+	<link rel="stylesheet" type="text/css" href="scripts/main.css" />
+	<title>
+		Giant Bomb Game Recommendations
+	</title>
+</head>
+<body>
+	<div id="updateBox" class="update-box" style="width: 600px; margin-left: auto; margin-right: auto;">
+		<div style="text-align:center; width: 100%; color: red;">1/11/2012 Update!</div>
+		<p>
+		Hey guys, I have updated the code a bit to now take into account user ratings. I.E Ratings without a written review. Here is how it works.
+		</p>
+		<p>
+		Ratings are now considered for your own preferences when determining what kind of games you like. So if you rate things but don't write a review that will be 
+		considered when determining recommendations <b>for yourself</b>.
+		</p>
+		<p>
+		However, when determining what recommendations to give other people, <b>only written reviews</b> are considered. This is a technical limitation (there is no way through
+		the api to get all the ratings for a game, only written reviews).
+		</p>
+		<p>
+		So basically, if you want your review to matter for recommending games to others, you need to write an actual review. If you just want to mark something as you
+		liked it for your own recommendations then you can just use user ratings.
+		</p>
+	</div>
+
+	<div id="nameBox" class="dialog-box" style="width: 300px; height: 150px;">
+		<div style="width: 250px; height: 80px; left: 25px; top: 35px; position: absolute;">
+			Your Username:
+			<input id="userName" type="text"></input>
+			<br/>
+			<br/>
+		
+			<div id="submitName" class="submit" style="width: 154px; height: 17px; margin-left: auto; margin-right: auto; ">
+				<span>Get my recommendations!</span>
+			</div>
+		</div>
+	</div>
+	
+	<div id="reccsBox" class="dialog-box" style="width: 680px; height: 600px; padding: 20px; position: relative; text-align: center;";>
+		<span style="font-size: 14px;">You might like...</span>
+		
+		<table id="reccs">
+		</table>
+		
+		<span class="backLink" style="position: absolute; left: 10px; bottom: 10px;"><-- Back</span>
+	</div>
+	
+	<div id="errBox" class="dialog-box" style="width: 500px; height: 150px; padding: 10px">
+		Sorry Champ, It looks like an error occured:
+		<br/>
+		<br/>
+		<span id="errorText"></span>
+		
+		<span class="backLink" style="position: absolute; left: 5px; bottom: 5px;"><-- Back</span>
+	</div>
+	
+	<div id="loading" style="height: 30px">
+		<img src="scripts/ajax-loader.gif"></img>
+		<span id="loadingText" style="font-size: 20px"></span>
+	</div>
+	
+	<span style="position: absolute; bottom: 0px; width:99%;">
+		<div style="width: 190px; margin-left: auto; margin-right: auto">Powered by the <a href="http://www.giantbomb.com">Giant Bomb</a> API</div>
+	</span>
+</body>
+
+</html>

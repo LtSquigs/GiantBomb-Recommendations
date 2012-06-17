@@ -1,0 +1,69 @@
+.submit {
+	background-image: url('submit-normal.png');
+	background-size: 100% 100%;
+	padding: 5px;
+}
+
+.submit:hover {
+	background-image: url('submit-hover.png');
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.submit:active {
+	background-image: url('submit-active.png');
+	background-size: 100% 100%;
+}
+
+.submit span:hover {
+	cursor: pointer;
+}
+
+body {
+	background-image: url('bg.png'); 
+	color: #5D6368; 
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+
+.dialog-box {
+	background-image: url('dialog-bg.png'); 
+	background-size: 100% 100%; 
+	position: relative;
+}
+
+input[type="text"]
+{
+	background-image: url('textbox.png'); 
+	border: none; 
+	padding: 5px; 
+	color: #5D6368; 
+	background-size: 100% 100%; 
+	font-size: 12px;
+}
+
+#reccs img {
+	width: 120px;
+	height: 150px;
+}
+
+#reccs td {
+	width: 130px;
+
+	text-align: center;
+}
+
+#reccs {
+	border-spacing: 70px 10px;
+	font-size: 12px;
+}
+
+.backLink {
+	color: blue;
+	font-style: underline;
+}
+
+.backLink:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
